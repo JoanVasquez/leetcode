@@ -2,10 +2,10 @@
 Create a dummy node as a placeholder to simplify pointer handling.
 Use a pointer tail that always refers to the end of the merged list.
 While both lists are not empty:
-Compare the current values of list1 and list2.
-Attach the node with the smaller value to tail.next.
-Move forward in the list from which the node was taken.
-Update tail to the newly attached node.
+    Compare the current values of list1 and list2.
+    Attach the node with the smaller value to tail.next.
+    Move forward in the list from which the node was taken.
+    Update tail to the newly attached node.
 When one list is exhausted, connect the remaining part of the other list to the merged result.
 Return dummy.next as the head of the new merged list.
 """
